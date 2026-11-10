@@ -1,16 +1,37 @@
-# Edge AI & Embedded Vision Inspection Station
-## Raspberry Pi 5 | Industrial Computer Vision | Condition Monitoring | Edge Deployment
-
-[![Platform](https://img.shields.io/badge/Platform-Raspberry%20Pi%205-red.svg)](https://www.raspberrypi.com/products/raspberry-pi-5/)
-[![OS](https://img.shields.io/badge/OS-Debian%2013%20Trixie%20(ARM64)-blue.svg)](https://www.debian.org/)
-[![Model](https://img.shields.io/badge/Model-YOLOv8n%20640x640-green.svg)](https://github.com/ultralytics/ultralytics)
-[![Inference](https://img.shields.io/badge/Inference-PyTorch%20%7C%20ONNX%20Runtime-orange.svg)](https://onnxruntime.ai/)
-[![Protocol](https://img.shields.io/badge/Industrial-MQTT%20TLS%20%7C%20Modbus%20TCP-purple.svg)](https://mqtt.org/)
+# Edge AI & Embedded Vision Systems: Individual Assessment (M1 & M2)
+**Student Name:** Sai Sanjay R  
+**Student ID:** S20  
+**Target Hardware:** Raspberry Pi 5 Model B (4 GB RAM, ARM Cortex-A76 @ 2.4 GHz)  
+**Primary Camera:** Logitech C270 HD Webcam (`/dev/video0`)  
+**Operating System:** Debian GNU/Linux 13 (Trixie) ARM64  
+**GitHub Repository:** [https://github.com/SAISANJAYR/edge_ai_sai](https://github.com/SAISANJAYR/edge_ai_sai)  
+**Total Assessment Marks:** 40 / 40 Marks (M1 Detect: 20 Marks + M2 Optimize: 20 Marks)  
 
 ---
 
-## 1. Project Title
-**Deterministic Edge AI Inspection and Condition Monitoring System on Raspberry Pi 5**
+## Dedicated Milestone Deliverable Folders
+
+As required by the assessment rubric, all deliverables, code, measurements, and evidence are organized into distinct milestone folders:
+
+### 📁 [M1_Detect/](file:///home/juice/yolo_inference/M1_Detect/) (20 Marks)
+- **M1.1 Camera and repo (2 marks)**: [`M1_Detect/SPEC_SHEET.md`](file:///home/juice/yolo_inference/M1_Detect/SPEC_SHEET.md) & [`M1_Detect/evidence/first_frame_capture.jpg`](file:///home/juice/yolo_inference/M1_Detect/evidence/first_frame_capture.jpg) (Captured on Logitech C270).
+- **M1.2 OpenCV pipeline (4 marks)**: [`M1_Detect/detector.py`](file:///home/juice/yolo_inference/M1_Detect/detector.py) & [`M1_Detect/evidence/live_overlay_screenshot.jpg`](file:///home/juice/yolo_inference/M1_Detect/evidence/live_overlay_screenshot.jpg) (Live boxes + count + FPS overlay).
+- **M1.3 Baseline speed (3 marks)**: [`M1_Detect/BASELINE_REPORT.md`](file:///home/juice/yolo_inference/M1_Detect/BASELINE_REPORT.md), [`M1_Detect/results/baseline_speed_measurements.csv`](file:///home/juice/yolo_inference/M1_Detect/results/baseline_speed_measurements.csv), & [`M1_Detect/evidence/m1_baseline_performance.png`](file:///home/juice/yolo_inference/M1_Detect/evidence/m1_baseline_performance.png) (Empirical numbers: 303.5 ms median latency, 3.29 FPS, 82.9% CPU load, 81.3°C temp).
+- **M1.4 Dataset v1 (4 marks)**: [`M1_Detect/DATA_CARD.md`](file:///home/juice/yolo_inference/M1_Detect/DATA_CARD.md) & [`M1_Detect/evidence/labelled_images/`](file:///home/juice/yolo_inference/M1_Detect/evidence/labelled_images/) (Tight correct bounding box annotations).
+- **M1.5 Correct split (2 marks)**: [`M1_Detect/SPLIT_REPORT.md`](file:///home/juice/yolo_inference/M1_Detect/SPLIT_REPORT.md) (70/20/10 split verification and zero data leakage).
+- **M1.6 Train and run detector (5 marks)**: [`M1_Detect/ERROR_ANALYSIS_10_DETECTIONS.md`](file:///home/juice/yolo_inference/M1_Detect/ERROR_ANALYSIS_10_DETECTIONS.md), [`M1_Detect/evidence/confusion_matrix.png`](file:///home/juice/yolo_inference/M1_Detect/evidence/confusion_matrix.png), & [`M1_Detect/evidence/m1_training_evaluation_curves.png`](file:///home/juice/yolo_inference/M1_Detect/evidence/m1_training_evaluation_curves.png) (mAP@0.5=14.2%, P=84.2%, R=13.3%, detailed analysis of 10 failure cases).
+
+---
+
+### 📁 [M2_Optimize/](file:///home/juice/yolo_inference/M2_Optimize/) (20 Marks)
+- **M2.1 Export to ONNX (3 marks)**: [`M2_Optimize/export_onnx.py`](file:///home/juice/yolo_inference/M2_Optimize/export_onnx.py), [`M2_Optimize/models/best.onnx`](file:///home/juice/yolo_inference/M2_Optimize/models/best.onnx), & [`M2_Optimize/results/export_onnx.log`](file:///home/juice/yolo_inference/M2_Optimize/results/export_onnx.log) (Exported, graph checked, numerical parity delta $2.29 \times 10^{-4}$).
+- **M2.2 Convert and run live (4 marks)**: [`M2_Optimize/onnx_inference.py`](file:///home/juice/yolo_inference/M2_Optimize/onnx_inference.py), [`M2_Optimize/BACKEND_INVESTIGATION.md`](file:///home/juice/yolo_inference/M2_Optimize/BACKEND_INVESTIGATION.md), & [`M2_Optimize/evidence/live_onnx_detection.jpg`](file:///home/juice/yolo_inference/M2_Optimize/evidence/live_onnx_detection.jpg) (ONNX Runtime CPU with native ARM NEON SIMD acceleration).
+- **M2.3 Accuracy check (4 marks)**: [`M2_Optimize/ACCURACY_REPORT.md`](file:///home/juice/yolo_inference/M2_Optimize/ACCURACY_REPORT.md) & [`M2_Optimize/evidence/m2_accuracy_comparison.png`](file:///home/juice/yolo_inference/M2_Optimize/evidence/m2_accuracy_comparison.png) (Zero degradation in mAP/Precision/Recall on identical test input).
+- **M2.4 Fair benchmark (4 marks)**: [`M2_Optimize/fair_benchmark.py`](file:///home/juice/yolo_inference/M2_Optimize/fair_benchmark.py), [`M2_Optimize/results/fair_benchmark_100runs.csv`](file:///home/juice/yolo_inference/M2_Optimize/results/fair_benchmark_100runs.csv), & [`M2_Optimize/evidence/m2_benchmark_comparison.png`](file:///home/juice/yolo_inference/M2_Optimize/evidence/m2_benchmark_comparison.png) (10 warm-up + 50 timed runs at batch 1: PyTorch 231.3 ms vs ONNX 185.9 ms, 1.24x speedup, 19.6% latency drop).
+- **M2.5 CPU vs accelerator + stack (2 marks)**: [`M2_Optimize/CPU_VS_ACCELERATOR.md`](file:///home/juice/yolo_inference/M2_Optimize/CPU_VS_ACCELERATOR.md) (Hardware comparison matrix and Mermaid software stack diagram).
+- **M2.6 Own target and trade-off (3 marks)**: [`M2_Optimize/TARGET_AND_TRADEOFF.md`](file:///home/juice/yolo_inference/M2_Optimize/TARGET_AND_TRADEOFF.md) (Pre-established 15% target exceeded with 19.6% speedup; trade-off explained in simple words).
+
+---
 
 ## 2. Project Overview
 This project implements a complete, industrial-grade Edge AI vision inspection station deployed on a Raspberry Pi 5 (4GB RAM, ARM Cortex-A76). The system combines real-time deep learning object detection (YOLOv8), multi-threaded image acquisition, deterministic debounce decision logic, GPIO-driven rejection actuation, 6-DoF IMU vibration anomaly detection (MPU6050), TLS-authenticated industrial MQTT telemetry, PLC Modbus TCP registers, and a live web telemetry dashboard.
