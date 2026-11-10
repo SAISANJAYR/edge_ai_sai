@@ -31,13 +31,13 @@ python3 M1_Detect/generate_m1_evidence.py
 
 ## 2. Milestone 1 Rubric Checklist & Deliverables
 
-| Task | Marks | Requirement in PDF | My Evidence & Deliverables | Status |
-|---|---|---|---|---|
-| **M1.1 Camera and repo** | 2 | Capture frame on device, commit spec sheet & first frame | `M1_Detect/SPEC_SHEET.md`, `M1_Detect/evidence/first_frame_capture.jpg` | **COMPLETE** |
-| **M1.2 OpenCV pipeline** | 4 | Run live overlay (boxes + count) on device myself | `M1_Detect/detector.py`, `M1_Detect/evidence/live_overlay_screenshot.jpg`, `M1_Detect/evidence/live_enclosure_perfect_detection.jpg` | **COMPLETE** |
-| **M1.3 Baseline speed** | 3 | Measure FPS, latency, CPU/GPU load, temp, show own numbers | `M1_Detect/BASELINE_REPORT.md`, `M1_Detect/results/baseline_speed_measurements.csv` | **COMPLETE** |
-| **M1.4 Dataset v1** | 4 | Label images with tight boxes, show labelled images & data card | `M1_Detect/DATA_CARD.md`, `M1_Detect/evidence/labelled_images/` | **COMPLETE** |
-| **M1.5 Correct split** | 2 | Explain & show 70/20/10 split with no leakage | `M1_Detect/SPLIT_REPORT.md` | **COMPLETE** |
-| **M1.6 Train & run detector** | 5 | Show mAP@0.5, P, R, confusion matrix, explain 10 wrong detections | `M1_Detect/ERROR_ANALYSIS_10_DETECTIONS.md`, `M1_Detect/evidence/confusion_matrix.png` | **COMPLETE** |
+| Task | Marks | Requirement in PDF | Dedicated Subfolder Link | Status |
+|---|:---:|---|---|:---:|
+| **M1.1 Camera and repo** | 2 | Capture frame on device, commit spec sheet & first frame | [`camera_and_repo/`](./camera_and_repo) | **COMPLETE** |
+| **M1.2 OpenCV pipeline** | 4 | Run live overlay (boxes + count) on device myself | [`opencv_pipeline/`](./opencv_pipeline) | **COMPLETE** |
+| **M1.3 Baseline speed** | 3 | Measure FPS, latency, CPU/GPU load, temp, show own numbers | [`baseline_speed/`](./baseline_speed) | **COMPLETE** |
+| **M1.4 Dataset v1** | 4 | Label images with tight boxes, show labelled images & data card | [`dataset_v1/`](./dataset_v1) | **COMPLETE** |
+| **M1.5 Correct split** | 2 | Explain & show 70/20/10 split with no leakage | [`correct_split/`](./correct_split) | **COMPLETE** |
+| **M1.6 Train & run detector** | 5 | Show mAP@0.5, P, R, confusion matrix, explain 10 wrong detections | [`train_and_run_detector/`](./train_and_run_detector) | **COMPLETE** |
 
 **Total M1 Score: 20 / 20 Marks**

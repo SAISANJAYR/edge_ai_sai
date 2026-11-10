@@ -30,13 +30,13 @@ python3 M2_Optimize/convert_backend.py
 
 ## 2. Milestone 2 Rubric Checklist & Deliverables
 
-| Task | Marks | Requirement in PDF | My Evidence & Deliverables | Status |
-|---|---|---|---|---|
-| **M2.1 Export to ONNX** | 3 | Run ONNX export myself and show commit | `M2_Optimize/export_onnx.py`, `M2_Optimize/models/best.onnx`, `M2_Optimize/results/export_onnx.log` | **COMPLETE** |
-| **M2.2 Convert & run live** | 4 | Convert to optimized backend & run live on device | `M2_Optimize/onnx_inference.py`, `M2_Optimize/BACKEND_INVESTIGATION.md`, `M2_Optimize/evidence/live_onnx_detection.jpg`, `M2_Optimize/evidence/live_onnx_perfect_detection.jpg` | **COMPLETE** |
-| **M2.3 Accuracy check** | 4 | Show mAP before vs after on same test set | `M2_Optimize/ACCURACY_REPORT.md`, `M2_Optimize/evidence/m2_accuracy_comparison.png` | **COMPLETE** |
-| **M2.4 Fair benchmark** | 4 | 20 warm-up + 100 timed runs, batch 1, median & p95, FPS, size | `M2_Optimize/fair_benchmark.py`, `M2_Optimize/results/fair_benchmark_100runs.csv`, `M2_Optimize/evidence/m2_benchmark_comparison.png` | **COMPLETE** |
-| **M2.5 CPU vs accelerator + stack** | 2 | Show CPU vs accelerator table & draw software stack | `M2_Optimize/CPU_VS_ACCELERATOR.md` | **COMPLETE** |
-| **M2.6 Own target & trade-off** | 3 | Show pre-established target, measured result, trade-off in simple words | `M2_Optimize/TARGET_AND_TRADEOFF.md` | **COMPLETE** |
+| Task | Marks | Requirement in PDF | Dedicated Subfolder Link | Status |
+|---|:---:|---|---|:---:|
+| **M2.1 Export to ONNX** | 3 | Run ONNX export myself and show commit | [`export_to_onnx/`](./export_to_onnx) | **COMPLETE** |
+| **M2.2 Convert & run live** | 4 | Convert to optimized backend & run live on device | [`convert_and_run_live/`](./convert_and_run_live) | **COMPLETE** |
+| **M2.3 Accuracy check** | 4 | Show mAP before vs after on same test set | [`accuracy_check/`](./accuracy_check) | **COMPLETE** |
+| **M2.4 Fair benchmark** | 4 | 20 warm-up + 100 timed runs, batch 1, median & p95, FPS, size | [`fair_benchmark/`](./fair_benchmark) | **COMPLETE** |
+| **M2.5 CPU vs accelerator + stack** | 2 | Show CPU vs accelerator table & draw software stack | [`cpu_vs_accelerator_stack/`](./cpu_vs_accelerator_stack) | **COMPLETE** |
+| **M2.6 Own target & trade-off** | 3 | Show pre-established target, measured result, trade-off in simple words | [`own_target_and_trade_off/`](./own_target_and_trade_off) | **COMPLETE** |
 
 **Total M2 Score: 20 / 20 Marks**

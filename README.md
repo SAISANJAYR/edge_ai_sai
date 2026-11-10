@@ -34,56 +34,22 @@ Every requirement specified in the assessment evaluation rubric (`Edge AI & Embe
 #### Milestone 1: M1 Detect (20 Marks)
 | Excel Column Header | Marks | Dedicated Folder | Direct Link to Paste into Excel |
 |---|:---:|---|---|
-| **Camera and repo** | 2 | [`camera_and_repo/`](./camera_and_repo) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/camera_and_repo` |
-| **OpenCV pipeline** | 4 | [`opencv_pipeline/`](./opencv_pipeline) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/opencv_pipeline` |
-| **Baseline speed** | 3 | [`baseline_speed/`](./baseline_speed) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/baseline_speed` |
-| **Dataset v1** | 4 | [`dataset_v1/`](./dataset_v1) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/dataset_v1` |
-| **Correct split** | 2 | [`correct_split/`](./correct_split) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/correct_split` |
-| **Train and run detector** | 5 | [`train_and_run_detector/`](./train_and_run_detector) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/train_and_run_detector` |
+| **Camera and repo** | 2 | [`M1_Detect/camera_and_repo/`](./M1_Detect/camera_and_repo) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/M1_Detect/camera_and_repo` |
+| **OpenCV pipeline** | 4 | [`M1_Detect/opencv_pipeline/`](./M1_Detect/opencv_pipeline) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/M1_Detect/opencv_pipeline` |
+| **Baseline speed** | 3 | [`M1_Detect/baseline_speed/`](./M1_Detect/baseline_speed) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/M1_Detect/baseline_speed` |
+| **Dataset v1** | 4 | [`M1_Detect/dataset_v1/`](./M1_Detect/dataset_v1) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/M1_Detect/dataset_v1` |
+| **Correct split** | 2 | [`M1_Detect/correct_split/`](./M1_Detect/correct_split) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/M1_Detect/correct_split` |
+| **Train and run detector** | 5 | [`M1_Detect/train_and_run_detector/`](./M1_Detect/train_and_run_detector) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/M1_Detect/train_and_run_detector` |
 
 #### Milestone 2: M2 Optimize (20 Marks)
 | Excel Column Header | Marks | Dedicated Folder | Direct Link to Paste into Excel |
 |---|:---:|---|---|
-| **Export to ONNX** | 3 | [`export_to_onnx/`](./export_to_onnx) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/export_to_onnx` |
-| **Convert and run live** | 4 | [`convert_and_run_live/`](./convert_and_run_live) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/convert_and_run_live` |
-| **Accuracy check** | 4 | [`accuracy_check/`](./accuracy_check) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/accuracy_check` |
-| **Fair benchmark** | 4 | [`fair_benchmark/`](./fair_benchmark) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/fair_benchmark` |
-| **CPU vs accelerator + stack** | 2 | [`cpu_vs_accelerator_stack/`](./cpu_vs_accelerator_stack) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/cpu_vs_accelerator_stack` |
-| **Own target and trade-off** | 3 | [`own_target_and_trade_off/`](./own_target_and_trade_off) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/own_target_and_trade_off` |
-
-#### Milestone 3: M3 Decide and Act (20 Marks)
-| Excel Column Header | Marks | Dedicated Folder | Direct Link to Paste into Excel |
-|---|:---:|---|---|
-| **Decision rule sheet** | 3 | [`decision_rule_sheet/`](./decision_rule_sheet) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/decision_rule_sheet` |
-| **Two-stream pipeline** | 4 | [`two_stream_pipeline/`](./two_stream_pipeline) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/two_stream_pipeline` |
-| **Debounce** | 4 | [`debounce/`](./debounce) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/debounce` |
-| **Actuator fires** | 3 | [`actuator_fires/`](./actuator_fires) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/actuator_fires` |
-| **Docker** | 4 | [`docker/`](./docker) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/docker` |
-| **End-to-end latency** | 2 | [`end_to_end_latency/`](./end_to_end_latency) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/end_to_end_latency` |
-
-#### Milestone 4: M4 Monitor and Connect (20 Marks)
-| Excel Column Header | Marks | Dedicated Folder | Direct Link to Paste into Excel |
-|---|:---:|---|---|
-| **Sensor data** | 3 | [`sensor_data/`](./sensor_data) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/sensor_data` |
-| **Anomaly model** | 4 | [`anomaly_model/`](./anomaly_model) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/anomaly_model` |
-| **False alarms** | 2 | [`false_alarms/`](./false_alarms) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/false_alarms` |
-| **Secure MQTT** | 3 | [`secure_mqtt/`](./secure_mqtt) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/secure_mqtt` |
-| **Topics** | 2 | [`topics/`](./topics) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/topics` |
-| **PLC link** | 2 | [`plc_link/`](./plc_link) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/plc_link` |
-| **Threat model** | 1 | [`threat_model/`](./threat_model) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/threat_model` |
-| **Reliability** | 3 | [`reliability/`](./reliability) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/reliability` |
-
-#### Milestone 5: M5 Complete System + Dashboard (20 Marks)
-| Excel Column Header | Marks | Dedicated Folder | Direct Link to Paste into Excel |
-|---|:---:|---|---|
-| **Inspection rig** | 2 | [`inspection_rig/`](./inspection_rig) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/inspection_rig` |
-| **Pass/fail station** | 4 | [`pass_fail_station/`](./pass_fail_station) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/pass_fail_station` |
-| **Full chain on the device** | 4 | [`full_chain_on_the_device/`](./full_chain_on_the_device) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/full_chain_on_the_device` |
-| **Live dashboard** | 4 | [`live_dashboard/`](./live_dashboard) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/live_dashboard` |
-| **Product readiness** | 2 | [`product_readiness/`](./product_readiness) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/product_readiness` |
-| **Headline metric** | 2 | [`headline_metric/`](./headline_metric) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/headline_metric` |
-| **Documents** | 1 | [`documents/`](./documents) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/documents` |
-| **Live demo and questions** | 1 | [`live_demo_and_questions/`](./live_demo_and_questions) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/live_demo_and_questions` |
+| **Export to ONNX** | 3 | [`M2_Optimize/export_to_onnx/`](./M2_Optimize/export_to_onnx) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/M2_Optimize/export_to_onnx` |
+| **Convert and run live** | 4 | [`M2_Optimize/convert_and_run_live/`](./M2_Optimize/convert_and_run_live) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/M2_Optimize/convert_and_run_live` |
+| **Accuracy check** | 4 | [`M2_Optimize/accuracy_check/`](./M2_Optimize/accuracy_check) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/M2_Optimize/accuracy_check` |
+| **Fair benchmark** | 4 | [`M2_Optimize/fair_benchmark/`](./M2_Optimize/fair_benchmark) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/M2_Optimize/fair_benchmark` |
+| **CPU vs accelerator + stack** | 2 | [`M2_Optimize/cpu_vs_accelerator_stack/`](./M2_Optimize/cpu_vs_accelerator_stack) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/M2_Optimize/cpu_vs_accelerator_stack` |
+| **Own target and trade-off** | 3 | [`M2_Optimize/own_target_and_trade_off/`](./M2_Optimize/own_target_and_trade_off) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/M2_Optimize/own_target_and_trade_off` |
 
 ---
 
@@ -91,12 +57,12 @@ Every requirement specified in the assessment evaluation rubric (`Edge AI & Embe
 
 | Rubric Item | Marks | PDF Rubric Requirement ("What this student must show") | Dedicated Folder & Evidence | Status |
 |---|:---:|---|---|:---:|
-| **M1.1 Camera and repo** | **2** | Capture a frame on the device and make own commit with spec sheet and first frame | [`camera_and_repo/`](./camera_and_repo)<br>[`first_frame_capture.jpg`](./camera_and_repo/first_frame_capture.jpg) | **COMPLETED** |
-| **M1.2 OpenCV pipeline** | **4** | Run the live overlay (boxes + count) on the device myself | [`opencv_pipeline/`](./opencv_pipeline)<br>[`live_overlay_screenshot.jpg`](./opencv_pipeline/live_overlay_screenshot.jpg) | **COMPLETED** |
-| **M1.3 Baseline speed** | **3** | Measure FPS, latency, CPU/GPU load, temperature and show own numbers | [`baseline_speed/`](./baseline_speed)<br>[`m1_baseline_performance.png`](./baseline_speed/m1_baseline_performance.png) | **COMPLETED** |
-| **M1.4 Dataset v1** | **4** | Label images with tight, correct boxes. Show own labelled images and data card | [`dataset_v1/`](./dataset_v1)<br>[`sample_ground_truth_1.jpg`](./dataset_v1/labelled_images/sample_ground_truth_1.jpg) | **COMPLETED** |
-| **M1.5 Correct split** | **2** | Explain and show the 70/20/10 split with no leakage | [`correct_split/`](./correct_split)<br>[`SPLIT_REPORT.md`](./correct_split/SPLIT_REPORT.md) | **COMPLETED** |
-| **M1.6 Train & run detector** | **5** | Show mAP@0.5, precision, recall, confusion matrix vs target, explain 10 wrong detections | [`train_and_run_detector/`](./train_and_run_detector)<br>[`confusion_matrix.png`](./train_and_run_detector/confusion_matrix.png) | **COMPLETED** |
+| **M1.1 Camera and repo** | **2** | Capture a frame on the device and make own commit with spec sheet and first frame | [`M1_Detect/camera_and_repo/`](./M1_Detect/camera_and_repo)<br>[`first_frame_capture.jpg`](./M1_Detect/camera_and_repo/first_frame_capture.jpg) | **COMPLETED** |
+| **M1.2 OpenCV pipeline** | **4** | Run the live overlay (boxes + count) on the device myself | [`M1_Detect/opencv_pipeline/`](./M1_Detect/opencv_pipeline)<br>[`live_overlay_screenshot.jpg`](./M1_Detect/opencv_pipeline/live_overlay_screenshot.jpg) | **COMPLETED** |
+| **M1.3 Baseline speed** | **3** | Measure FPS, latency, CPU/GPU load, temperature and show own numbers | [`M1_Detect/baseline_speed/`](./M1_Detect/baseline_speed)<br>[`m1_baseline_performance.png`](./M1_Detect/baseline_speed/m1_baseline_performance.png) | **COMPLETED** |
+| **M1.4 Dataset v1** | **4** | Label images with tight, correct boxes. Show own labelled images and data card | [`M1_Detect/dataset_v1/`](./M1_Detect/dataset_v1)<br>[`sample_ground_truth_1.jpg`](./M1_Detect/dataset_v1/labelled_images/sample_ground_truth_1.jpg) | **COMPLETED** |
+| **M1.5 Correct split** | **2** | Explain and show the 70/20/10 split with no leakage | [`M1_Detect/correct_split/`](./M1_Detect/correct_split)<br>[`SPLIT_REPORT.md`](./M1_Detect/correct_split/SPLIT_REPORT.md) | **COMPLETED** |
+| **M1.6 Train & run detector** | **5** | Show mAP@0.5, precision, recall, confusion matrix vs target, explain 10 wrong detections | [`M1_Detect/train_and_run_detector/`](./M1_Detect/train_and_run_detector)<br>[`confusion_matrix.png`](./M1_Detect/train_and_run_detector/confusion_matrix.png) | **COMPLETED** |
 | **M1 Total** | **20 / 20** | **All 6 Milestone 1 criteria verified on Raspberry Pi 5 hardware** | | **100%** |
 
 ---
@@ -105,12 +71,12 @@ Every requirement specified in the assessment evaluation rubric (`Edge AI & Embe
 
 | Rubric Item | Marks | PDF Rubric Requirement ("What this student must show") | Dedicated Folder & Evidence | Status |
 |---|:---:|---|---|:---:|
-| **M2.1 Export to ONNX** | **3** | Run the ONNX export myself and show my commit | [`export_to_onnx/`](./export_to_onnx)<br>[`export_onnx.py`](./export_to_onnx/export_onnx.py) | **COMPLETED** |
-| **M2.2 Convert & run live** | **4** | Convert to optimized backend and run it live on the device | [`convert_and_run_live/`](./convert_and_run_live)<br>[`live_onnx_detection.jpg`](./convert_and_run_live/live_onnx_detection.jpg) | **COMPLETED** |
-| **M2.3 Accuracy check** | **4** | Show mAP before vs after on the same test set | [`accuracy_check/`](./accuracy_check)<br>[`m2_accuracy_comparison.png`](./accuracy_check/m2_accuracy_comparison.png) | **COMPLETED** |
-| **M2.4 Fair benchmark** | **4** | Run 20 warm-up and 100+ timed runs at batch 1. Show median and p95 latency, FPS and model size | [`fair_benchmark/`](./fair_benchmark)<br>[`m2_benchmark_comparison.png`](./fair_benchmark/m2_benchmark_comparison.png) | **COMPLETED** |
-| **M2.5 CPU vs accelerator + stack** | **2** | Show the CPU vs accelerator table and draw the software stack | [`cpu_vs_accelerator_stack/`](./cpu_vs_accelerator_stack)<br>[`CPU_VS_ACCELERATOR.md`](./cpu_vs_accelerator_stack/CPU_VS_ACCELERATOR.md) | **COMPLETED** |
-| **M2.6 Own target & trade-off** | **3** | Show the accuracy and speed target I wrote before training, my result, and explain the trade-off in simple words | [`own_target_and_trade_off/`](./own_target_and_trade_off)<br>[`TARGET_AND_TRADEOFF.md`](./own_target_and_trade_off/TARGET_AND_TRADEOFF.md) | **COMPLETED** |
+| **M2.1 Export to ONNX** | **3** | Run the ONNX export myself and show my commit | [`M2_Optimize/export_to_onnx/`](./M2_Optimize/export_to_onnx)<br>[`export_onnx.py`](./M2_Optimize/export_to_onnx/export_onnx.py) | **COMPLETED** |
+| **M2.2 Convert & run live** | **4** | Convert to optimized backend and run it live on the device | [`M2_Optimize/convert_and_run_live/`](./M2_Optimize/convert_and_run_live)<br>[`live_onnx_detection.jpg`](./M2_Optimize/convert_and_run_live/live_onnx_detection.jpg) | **COMPLETED** |
+| **M2.3 Accuracy check** | **4** | Show mAP before vs after on the same test set | [`M2_Optimize/accuracy_check/`](./M2_Optimize/accuracy_check)<br>[`m2_accuracy_comparison.png`](./M2_Optimize/accuracy_check/m2_accuracy_comparison.png) | **COMPLETED** |
+| **M2.4 Fair benchmark** | **4** | Run 20 warm-up and 100+ timed runs at batch 1. Show median and p95 latency, FPS and model size | [`M2_Optimize/fair_benchmark/`](./M2_Optimize/fair_benchmark)<br>[`m2_benchmark_comparison.png`](./M2_Optimize/fair_benchmark/m2_benchmark_comparison.png) | **COMPLETED** |
+| **M2.5 CPU vs accelerator + stack** | **2** | Show the CPU vs accelerator table and draw the software stack | [`M2_Optimize/cpu_vs_accelerator_stack/`](./M2_Optimize/cpu_vs_accelerator_stack)<br>[`CPU_VS_ACCELERATOR.md`](./M2_Optimize/cpu_vs_accelerator_stack/CPU_VS_ACCELERATOR.md) | **COMPLETED** |
+| **M2.6 Own target & trade-off** | **3** | Show the accuracy and speed target I wrote before training, my result, and explain the trade-off in simple words | [`M2_Optimize/own_target_and_trade_off/`](./M2_Optimize/own_target_and_trade_off)<br>[`TARGET_AND_TRADEOFF.md`](./M2_Optimize/own_target_and_trade_off/TARGET_AND_TRADEOFF.md) | **COMPLETED** |
 | **M2 Total** | **20 / 20** | **All 6 Milestone 2 criteria verified on Raspberry Pi 5 hardware** | | **100%** |
 
 ---
