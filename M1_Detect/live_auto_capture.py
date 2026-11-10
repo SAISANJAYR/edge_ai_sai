@@ -27,14 +27,26 @@ def main():
     print("Loading YOLOv8 model...", flush=True)
     model = YOLO(model_path)
     
-    print("Opening Logitech C270 (/dev/video0)...", flush=True)
-    cap = cv2.VideoCapture(0)
+    print("Detecting camera device...", flush=True)
+    cap = None
+    cam_idx = -1
+    for idx in [0, 1, 2, 3]:
+        c = cv2.VideoCapture(idx)
+        if c.isOpened():
+            ret, _ = c.read()
+            if ret:
+                cap = c
+                cam_idx = idx
+                break
+            c.release()
+
+    if cap is None:
+        print("Error: Could not find any active camera device (/dev/video*).", flush=True)
+        return
+
+    print(f"Connected to camera at /dev/video{cam_idx} (index {cam_idx})", flush=True)
     cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
     cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
-
-    if not cap.isOpened():
-        print("Error: Could not open /dev/video0.", flush=True)
-        return
 
     print("\n=======================================================", flush=True)
     print(">>> PLEASE HOLD YOUR ENCLOSURE IN FRONT OF CAMERA <<<", flush=True)

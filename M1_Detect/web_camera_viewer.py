@@ -41,14 +41,26 @@ def capture_and_inference_loop():
     print("[Viewer] Loading YOLOv8 model (models/best.pt)...", flush=True)
     MODEL = YOLO("models/best.pt")
 
-    print("[Viewer] Opening Logitech C270 camera (/dev/video0)...", flush=True)
-    CAP = cv2.VideoCapture(0)
+    print("[Viewer] Detecting camera device...", flush=True)
+    CAP = None
+    cam_idx = -1
+    for idx in [0, 1, 2, 3]:
+        c = cv2.VideoCapture(idx)
+        if c.isOpened():
+            ret, _ = c.read()
+            if ret:
+                CAP = c
+                cam_idx = idx
+                break
+            c.release()
+
+    if CAP is None:
+        print("[Viewer] ERROR: Could not find any active camera device!", flush=True)
+        return
+
+    print(f"[Viewer] Connected to camera at /dev/video{cam_idx}", flush=True)
     CAP.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
     CAP.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
-
-    if not CAP.isOpened():
-        print("[Viewer] ERROR: Could not open /dev/video0!", flush=True)
-        return
 
     print("[Viewer] Camera stream active. Ready for live inspection.", flush=True)
 
