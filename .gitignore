@@ -1,0 +1,42 @@
+# Virtual Environment
+.venv/
+venv/
+ENV/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Model Binaries and Large Datasets (kept out of Git per project specification)
+*.pt
+models/*.pt
+models/optimized/*.onnx
+models/optimized/*.bin
+models/optimized/*.param
+models/optimized/*.tflite
+!models/README.md
+data/raw/*
+data/train/*
+data/val/*
+!data/README.md
+
+# Environment and Secrets
+.env
+*.pem
+*.key
+*.crt
+
+# OS & Editor
+.DS_Store
+.vscode/
+*.swp
+*~
+
+# Logs and Temporary files
+*.log
+results/logs/*.log
+scratch/
+/tmp/

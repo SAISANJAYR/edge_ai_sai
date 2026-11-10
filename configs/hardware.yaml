@@ -1,0 +1,36 @@
+# Hardware Specifications and Pinout Reference
+
+host:
+  board: "Raspberry Pi 5 Model B Rev 1.0"
+  soc: "Broadcom BCM2712"
+  cpu: "Quad-core ARM Cortex-A76 @ 2.4 GHz"
+  gpu: "VideoCore VII"
+  ram_total_mb: 4096
+  architecture: "aarch64"
+  os: "Debian GNU/Linux 13 (Trixie)"
+  kernel: "6.18.50+rpt-rpi-2712"
+
+interfaces:
+  camera:
+    type: "UVC USB Webcam / V4L2"
+    device_node: "/dev/video0"
+    resolution: "640x480"
+    framerate: 30
+
+  gpio:
+    chip: "/dev/gpiochip4"
+    pin_actuator_reject: 17     # Physical Pin 11, GPIO17
+    pin_status_led: 27          # Physical Pin 13, GPIO27
+    pin_heartbeat_led: 22       # Physical Pin 15, GPIO22
+
+  i2c:
+    bus: "/dev/i2c-1"
+    sda_pin: 2                  # Physical Pin 3, GPIO2
+    scl_pin: 3                  # Physical Pin 5, GPIO3
+    devices:
+      - name: "MPU6050 6-DoF IMU"
+        address: 0x68
+
+  power:
+    source: "USB-C 5V 5A PD Power Supply"
+    voltage_nominal: 5.1

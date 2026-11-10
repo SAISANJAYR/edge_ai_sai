@@ -1,0 +1,55 @@
+# Edge AI Vision System Configuration
+
+system:
+  name: "Raspberry Pi 5 Edge AI Inspection System"
+  version: "1.0.0"
+  target_hardware: "Raspberry Pi 5 (4GB, BCM2712 Cortex-A76)"
+  os: "Debian GNU/Linux 13 (Trixie) aarch64"
+
+camera:
+  device_index: 0
+  width: 640
+  height: 480
+  fps: 30
+  auto_fallback_simulation: true
+  simulation_pattern: "synthetic_industrial"  # synthetic_industrial, test_card, static_image
+  test_image_dir: "data/test"
+
+model:
+  framework: "Ultralytics YOLOv8"
+  primary_weights: "models/best.pt"
+  onnx_weights: "models/optimized/best.onnx"
+  classes:
+    0: "enclosure"
+  input_size: [640, 640]
+  confidence_threshold: 0.40
+  iou_threshold: 0.50
+  device: "cpu"
+
+decision:
+  rules_file: "configs/rules.yaml"
+  debounce_frames: 3
+  cooldown_seconds: 1.0
+
+actuator:
+  pin: 17
+  active_high: true
+  pulse_duration_ms: 250
+  safe_state: 0
+  simulation_mode: true
+
+sensor:
+  i2c_bus: 1
+  mpu6050_address: 0x68
+  sample_rate_hz: 50
+  simulation_mode: true
+
+logging:
+  level: "INFO"
+  log_dir: "results/logs"
+  metrics_dir: "results/benchmarks"
+
+dashboard:
+  host: "0.0.0.0"
+  port: 5000
+  stream_fps: 20
