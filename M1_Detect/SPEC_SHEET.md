@@ -15,7 +15,7 @@
 | **Host System** | Raspberry Pi 5 Model B (BCM2712 SoC) | 4 Cores ARM Cortex-A76 @ 2.4 GHz |
 | **Operating System** | Debian GNU/Linux 13 (Trixie) | aarch64 (Kernel 6.18.50+rpt-rpi-2712) |
 | **System Memory** | 4.0 GiB LPDDR4X SDRAM | Shared CPU / GPU memory architecture |
-| **Primary Vision Sensor**| **Logitech C270 HD Webcam** (USB UVC) | Device node: `/dev/video0` (Bus 001 Device 003) |
+| **Primary Vision Sensor**| **Logitech C270 HD Webcam** (USB UVC) | Device node: `/dev/video1` / `/dev/video0` (Bus 001 Device 003) |
 | **Native Sensor Pixel Format** | YUYV 4:2:2 / MJPEG | Capture resolution: **640 × 480 @ 30 FPS** |
 | **Field of View / Lens** | 60° diagonal FOV, fixed focus | Working distance: 20 cm – 60 cm to enclosure |
 | **Power Delivery** | Official 27W USB-C PD (5.1V / 5.0A) | Dynamic current up to 5A |

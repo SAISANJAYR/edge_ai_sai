@@ -34,7 +34,7 @@ python3 M1_Detect/generate_m1_evidence.py
 | Task | Marks | Requirement in PDF | My Evidence & Deliverables | Status |
 |---|---|---|---|---|
 | **M1.1 Camera and repo** | 2 | Capture frame on device, commit spec sheet & first frame | `M1_Detect/SPEC_SHEET.md`, `M1_Detect/evidence/first_frame_capture.jpg` | **COMPLETE** |
-| **M1.2 OpenCV pipeline** | 4 | Run live overlay (boxes + count) on device myself | `M1_Detect/detector.py`, `M1_Detect/evidence/live_overlay_screenshot.jpg` | **COMPLETE** |
+| **M1.2 OpenCV pipeline** | 4 | Run live overlay (boxes + count) on device myself | `M1_Detect/detector.py`, `M1_Detect/evidence/live_overlay_screenshot.jpg`, `M1_Detect/evidence/live_enclosure_perfect_detection.jpg` | **COMPLETE** |
 | **M1.3 Baseline speed** | 3 | Measure FPS, latency, CPU/GPU load, temp, show own numbers | `M1_Detect/BASELINE_REPORT.md`, `M1_Detect/results/baseline_speed_measurements.csv` | **COMPLETE** |
 | **M1.4 Dataset v1** | 4 | Label images with tight boxes, show labelled images & data card | `M1_Detect/DATA_CARD.md`, `M1_Detect/evidence/labelled_images/` | **COMPLETE** |
 | **M1.5 Correct split** | 2 | Explain & show 70/20/10 split with no leakage | `M1_Detect/SPLIT_REPORT.md` | **COMPLETE** |

@@ -33,7 +33,7 @@ python3 M2_Optimize/convert_backend.py
 | Task | Marks | Requirement in PDF | My Evidence & Deliverables | Status |
 |---|---|---|---|---|
 | **M2.1 Export to ONNX** | 3 | Run ONNX export myself and show commit | `M2_Optimize/export_onnx.py`, `M2_Optimize/models/best.onnx`, `M2_Optimize/results/export_onnx.log` | **COMPLETE** |
-| **M2.2 Convert & run live** | 4 | Convert to optimized backend & run live on device | `M2_Optimize/onnx_inference.py`, `M2_Optimize/BACKEND_INVESTIGATION.md`, `M2_Optimize/evidence/live_onnx_detection.jpg` | **COMPLETE** |
+| **M2.2 Convert & run live** | 4 | Convert to optimized backend & run live on device | `M2_Optimize/onnx_inference.py`, `M2_Optimize/BACKEND_INVESTIGATION.md`, `M2_Optimize/evidence/live_onnx_detection.jpg`, `M2_Optimize/evidence/live_onnx_perfect_detection.jpg` | **COMPLETE** |
 | **M2.3 Accuracy check** | 4 | Show mAP before vs after on same test set | `M2_Optimize/ACCURACY_REPORT.md`, `M2_Optimize/evidence/m2_accuracy_comparison.png` | **COMPLETE** |
 | **M2.4 Fair benchmark** | 4 | 20 warm-up + 100 timed runs, batch 1, median & p95, FPS, size | `M2_Optimize/fair_benchmark.py`, `M2_Optimize/results/fair_benchmark_100runs.csv`, `M2_Optimize/evidence/m2_benchmark_comparison.png` | **COMPLETE** |
 | **M2.5 CPU vs accelerator + stack** | 2 | Show CPU vs accelerator table & draw software stack | `M2_Optimize/CPU_VS_ACCELERATOR.md` | **COMPLETE** |
