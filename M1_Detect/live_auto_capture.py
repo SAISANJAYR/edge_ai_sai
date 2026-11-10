@@ -9,8 +9,9 @@ import os
 import sys
 
 # Auto-switch to project virtual environment if run under system python
-_venv_python = os.path.abspath(os.path.join(os.path.dirname(__file__), "../.venv/bin/python"))
-if os.path.exists(_venv_python) and os.path.realpath(sys.executable) != os.path.realpath(_venv_python):
+_venv_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "../.venv"))
+if sys.prefix != _venv_dir and os.path.exists(os.path.join(_venv_dir, "bin/python")):
+    _venv_python = os.path.join(_venv_dir, "bin/python")
     os.execv(_venv_python, [_venv_python] + sys.argv)
 
 import time
@@ -20,23 +21,26 @@ from ultralytics import YOLO
 def main():
     model_path = "models/best.pt"
     if not os.path.exists(model_path):
-        print(f"Error: {model_path} not found.")
+        print(f"Error: {model_path} not found.", flush=True)
         return
 
-    print("Loading YOLOv8 model...")
+    print("Loading YOLOv8 model...", flush=True)
     model = YOLO(model_path)
     
-    print("Opening Logitech C270 (/dev/video0)...")
+    print("Opening Logitech C270 (/dev/video0)...", flush=True)
     cap = cv2.VideoCapture(0)
     cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
     cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
 
     if not cap.isOpened():
-        print("Error: Could not open /dev/video0.")
+        print("Error: Could not open /dev/video0.", flush=True)
         return
 
-    print("\n>>> PLEASE HOLD YOUR ENCLOSURE IN FRONT OF THE CAMERA (20-40cm away) <<<")
-    print("Scanning for enclosure... (Press Ctrl+C to stop)")
+    print("\n=======================================================", flush=True)
+    print(">>> PLEASE HOLD YOUR ENCLOSURE IN FRONT OF CAMERA <<<", flush=True)
+    print(">>> Distance: 20-40 cm | Good lighting | Face forward <<<", flush=True)
+    print("=======================================================\n", flush=True)
+    print("Scanning continuously... (Press Ctrl+C to stop at any time)\n", flush=True)
 
     frame_idx = 0
     best_conf = 0.0
@@ -59,7 +63,7 @@ def main():
             if len(boxes) > 0:
                 conf = float(boxes[0].conf[0])
                 cls_name = model.names[int(boxes[0].cls[0])]
-                print(f"[Frame {frame_idx:04d}] DETECTED: {cls_name} (Confidence: {conf:.1%}, FPS: {fps:.1f})")
+                print(f"[Frame {frame_idx:04d}] DETECTED: {cls_name} (Confidence: {conf:.1%}, FPS: {fps:.1f})", flush=True)
 
                 # Annotate
                 annotated = results.plot()
@@ -73,25 +77,26 @@ def main():
                     cv2.imwrite("M1_Detect/evidence/live_overlay_screenshot.jpg", annotated)
                     cv2.imwrite("M2_Optimize/evidence/live_onnx_detection.jpg", annotated)
                     cv2.imwrite("data/test/actual_live_enclosure.jpg", annotated)
-                    print(f"--> Saved NEW BEST detection screenshot (Conf: {conf:.1%}) to M1 and M2 evidence!")
+                    print(f"--> Saved NEW BEST detection screenshot (Conf: {conf:.1%}) to M1 and M2 evidence!", flush=True)
 
                 if conf >= 0.35:
-                    print(f"\nSUCCESS: Confirmed strong detection ({conf:.1%})!")
+                    print(f"\nSUCCESS: Confirmed strong detection ({conf:.1%})!", flush=True)
+                    print(f"Evidence saved to M1_Detect/evidence/live_overlay_screenshot.jpg", flush=True)
                     break
             else:
-                if frame_idx % 10 == 0:
-                    print(f"[Frame {frame_idx:04d}] Scanning... No enclosure detected yet. (Ensure good lighting & angle)")
+                if frame_idx % 5 == 0:
+                    print(f"[Frame {frame_idx:04d}] Scanning... No enclosure detected yet. (FPS: {fps:.1f})", flush=True)
 
             time.sleep(0.05)
 
     except KeyboardInterrupt:
-        print("\nStopped by user.")
+        print("\nStopped by user.", flush=True)
     finally:
         cap.release()
         if best_frame is not None:
-            print(f"\nFinal best detection saved with confidence: {best_conf:.1%}")
+            print(f"\nFinal best detection saved with confidence: {best_conf:.1%}", flush=True)
         else:
-            print("\nNo detection above threshold was captured.")
+            print("\nNo detection above threshold was captured.", flush=True)
 
 if __name__ == "__main__":
     main()

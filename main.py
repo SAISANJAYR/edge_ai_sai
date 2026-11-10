@@ -8,8 +8,9 @@ import os
 import sys
 
 # Auto-switch to project virtual environment if run under system python
-_venv_python = os.path.abspath(os.path.join(os.path.dirname(__file__), ".venv/bin/python"))
-if os.path.exists(_venv_python) and os.path.realpath(sys.executable) != os.path.realpath(_venv_python):
+_venv_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".venv"))
+if sys.prefix != _venv_dir and os.path.exists(os.path.join(_venv_dir, "bin/python")):
+    _venv_python = os.path.join(_venv_dir, "bin/python")
     os.execv(_venv_python, [_venv_python] + sys.argv)
 
 import argparse
