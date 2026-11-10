@@ -26,32 +26,91 @@ All experiments, benchmarks, model conversions, and vision inferences were devel
 
 ## 2. Assessment Rubric Checklist & Deliverables Matrix
 
-Every requirement specified in the assessment evaluation rubric (`Edge AI & Embedded Vision Systems .xlsx.pdf`) is fulfilled and mapped below:
+Every requirement specified in the assessment evaluation rubric (`Edge AI & Embedded Vision Systems .xlsx.pdf`) is organized into dedicated, self-contained folders matching the spreadsheet columns 1-to-1.
 
-### Milestone 1: M1 Detect (20 Marks)
+### 📋 Direct GitHub Submission Links for Spreadsheet (Student: Sai Sanjay R, S20)
+*Copy and paste each corresponding link into your row (S20) in the grading spreadsheet:*
 
-| Rubric Item | Marks | PDF Rubric Requirement ("What this student must show") | Evidence File & Clickable Deliverable Link | Status |
+#### Milestone 1: M1 Detect (20 Marks)
+| Excel Column Header | Marks | Dedicated Folder | Direct Link to Paste into Excel |
+|---|:---:|---|---|
+| **Camera and repo** | 2 | [`camera_and_repo/`](./camera_and_repo) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/camera_and_repo` |
+| **OpenCV pipeline** | 4 | [`opencv_pipeline/`](./opencv_pipeline) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/opencv_pipeline` |
+| **Baseline speed** | 3 | [`baseline_speed/`](./baseline_speed) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/baseline_speed` |
+| **Dataset v1** | 4 | [`dataset_v1/`](./dataset_v1) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/dataset_v1` |
+| **Correct split** | 2 | [`correct_split/`](./correct_split) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/correct_split` |
+| **Train and run detector** | 5 | [`train_and_run_detector/`](./train_and_run_detector) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/train_and_run_detector` |
+
+#### Milestone 2: M2 Optimize (20 Marks)
+| Excel Column Header | Marks | Dedicated Folder | Direct Link to Paste into Excel |
+|---|:---:|---|---|
+| **Export to ONNX** | 3 | [`export_to_onnx/`](./export_to_onnx) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/export_to_onnx` |
+| **Convert and run live** | 4 | [`convert_and_run_live/`](./convert_and_run_live) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/convert_and_run_live` |
+| **Accuracy check** | 4 | [`accuracy_check/`](./accuracy_check) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/accuracy_check` |
+| **Fair benchmark** | 4 | [`fair_benchmark/`](./fair_benchmark) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/fair_benchmark` |
+| **CPU vs accelerator + stack** | 2 | [`cpu_vs_accelerator_stack/`](./cpu_vs_accelerator_stack) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/cpu_vs_accelerator_stack` |
+| **Own target and trade-off** | 3 | [`own_target_and_trade_off/`](./own_target_and_trade_off) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/own_target_and_trade_off` |
+
+#### Milestone 3: M3 Decide and Act (20 Marks)
+| Excel Column Header | Marks | Dedicated Folder | Direct Link to Paste into Excel |
+|---|:---:|---|---|
+| **Decision rule sheet** | 3 | [`decision_rule_sheet/`](./decision_rule_sheet) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/decision_rule_sheet` |
+| **Two-stream pipeline** | 4 | [`two_stream_pipeline/`](./two_stream_pipeline) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/two_stream_pipeline` |
+| **Debounce** | 4 | [`debounce/`](./debounce) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/debounce` |
+| **Actuator fires** | 3 | [`actuator_fires/`](./actuator_fires) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/actuator_fires` |
+| **Docker** | 4 | [`docker/`](./docker) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/docker` |
+| **End-to-end latency** | 2 | [`end_to_end_latency/`](./end_to_end_latency) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/end_to_end_latency` |
+
+#### Milestone 4: M4 Monitor and Connect (20 Marks)
+| Excel Column Header | Marks | Dedicated Folder | Direct Link to Paste into Excel |
+|---|:---:|---|---|
+| **Sensor data** | 3 | [`sensor_data/`](./sensor_data) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/sensor_data` |
+| **Anomaly model** | 4 | [`anomaly_model/`](./anomaly_model) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/anomaly_model` |
+| **False alarms** | 2 | [`false_alarms/`](./false_alarms) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/false_alarms` |
+| **Secure MQTT** | 3 | [`secure_mqtt/`](./secure_mqtt) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/secure_mqtt` |
+| **Topics** | 2 | [`topics/`](./topics) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/topics` |
+| **PLC link** | 2 | [`plc_link/`](./plc_link) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/plc_link` |
+| **Threat model** | 1 | [`threat_model/`](./threat_model) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/threat_model` |
+| **Reliability** | 3 | [`reliability/`](./reliability) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/reliability` |
+
+#### Milestone 5: M5 Complete System + Dashboard (20 Marks)
+| Excel Column Header | Marks | Dedicated Folder | Direct Link to Paste into Excel |
+|---|:---:|---|---|
+| **Inspection rig** | 2 | [`inspection_rig/`](./inspection_rig) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/inspection_rig` |
+| **Pass/fail station** | 4 | [`pass_fail_station/`](./pass_fail_station) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/pass_fail_station` |
+| **Full chain on the device** | 4 | [`full_chain_on_the_device/`](./full_chain_on_the_device) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/full_chain_on_the_device` |
+| **Live dashboard** | 4 | [`live_dashboard/`](./live_dashboard) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/live_dashboard` |
+| **Product readiness** | 2 | [`product_readiness/`](./product_readiness) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/product_readiness` |
+| **Headline metric** | 2 | [`headline_metric/`](./headline_metric) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/headline_metric` |
+| **Documents** | 1 | [`documents/`](./documents) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/documents` |
+| **Live demo and questions** | 1 | [`live_demo_and_questions/`](./live_demo_and_questions) | `https://github.com/SAISANJAYR/edge_ai_sai/tree/main/live_demo_and_questions` |
+
+---
+
+### Detailed Deliverables Matrix: M1 Detect (20 Marks)
+
+| Rubric Item | Marks | PDF Rubric Requirement ("What this student must show") | Dedicated Folder & Evidence | Status |
 |---|:---:|---|---|:---:|
-| **M1.1 Camera and repo** | **2** | Capture a frame on the device and make own commit with spec sheet and first frame | [`M1_Detect/SPEC_SHEET.md`](file:///home/juice/yolo_inference/M1_Detect/SPEC_SHEET.md)<br>[`M1_Detect/evidence/first_frame_capture.jpg`](file:///home/juice/yolo_inference/M1_Detect/evidence/first_frame_capture.jpg) | **COMPLETED** |
-| **M1.2 OpenCV pipeline** | **4** | Run the live overlay (boxes + count) on the device myself | [`M1_Detect/detector.py`](file:///home/juice/yolo_inference/M1_Detect/detector.py)<br>[`M1_Detect/evidence/live_overlay_screenshot.jpg`](file:///home/juice/yolo_inference/M1_Detect/evidence/live_overlay_screenshot.jpg)<br>[`M1_Detect/evidence/live_enclosure_perfect_detection.jpg`](file:///home/juice/yolo_inference/M1_Detect/evidence/live_enclosure_perfect_detection.jpg) | **COMPLETED** |
-| **M1.3 Baseline speed** | **3** | Measure FPS, latency, CPU/GPU load, temperature and show own numbers | [`M1_Detect/BASELINE_REPORT.md`](file:///home/juice/yolo_inference/M1_Detect/BASELINE_REPORT.md)<br>[`M1_Detect/results/baseline_speed_measurements.csv`](file:///home/juice/yolo_inference/M1_Detect/results/baseline_speed_measurements.csv)<br>[`M1_Detect/evidence/m1_baseline_performance.png`](file:///home/juice/yolo_inference/M1_Detect/evidence/m1_baseline_performance.png) | **COMPLETED** |
-| **M1.4 Dataset v1** | **4** | Label images with tight, correct boxes. Show own labelled images and data card | [`M1_Detect/DATA_CARD.md`](file:///home/juice/yolo_inference/M1_Detect/DATA_CARD.md)<br>[`M1_Detect/evidence/labelled_images/`](file:///home/juice/yolo_inference/M1_Detect/evidence/labelled_images/) (Authentic training images) | **COMPLETED** |
-| **M1.5 Correct split** | **2** | Explain and show the 70/20/10 split with no leakage | [`M1_Detect/SPLIT_REPORT.md`](file:///home/juice/yolo_inference/M1_Detect/SPLIT_REPORT.md) | **COMPLETED** |
-| **M1.6 Train & run detector** | **5** | Show mAP@0.5, precision, recall, confusion matrix vs target, explain 10 wrong detections | [`M1_Detect/ERROR_ANALYSIS_10_DETECTIONS.md`](file:///home/juice/yolo_inference/M1_Detect/ERROR_ANALYSIS_10_DETECTIONS.md)<br>[`M1_Detect/evidence/confusion_matrix.png`](file:///home/juice/yolo_inference/M1_Detect/evidence/confusion_matrix.png)<br>[`M1_Detect/evidence/m1_training_evaluation_curves.png`](file:///home/juice/yolo_inference/M1_Detect/evidence/m1_training_evaluation_curves.png)<br>[`M1_Detect/evidence/wrong_detections/`](file:///home/juice/yolo_inference/M1_Detect/evidence/wrong_detections/) (10 camera frames) | **COMPLETED** |
+| **M1.1 Camera and repo** | **2** | Capture a frame on the device and make own commit with spec sheet and first frame | [`camera_and_repo/`](./camera_and_repo)<br>[`first_frame_capture.jpg`](./camera_and_repo/first_frame_capture.jpg) | **COMPLETED** |
+| **M1.2 OpenCV pipeline** | **4** | Run the live overlay (boxes + count) on the device myself | [`opencv_pipeline/`](./opencv_pipeline)<br>[`live_overlay_screenshot.jpg`](./opencv_pipeline/live_overlay_screenshot.jpg) | **COMPLETED** |
+| **M1.3 Baseline speed** | **3** | Measure FPS, latency, CPU/GPU load, temperature and show own numbers | [`baseline_speed/`](./baseline_speed)<br>[`m1_baseline_performance.png`](./baseline_speed/m1_baseline_performance.png) | **COMPLETED** |
+| **M1.4 Dataset v1** | **4** | Label images with tight, correct boxes. Show own labelled images and data card | [`dataset_v1/`](./dataset_v1)<br>[`sample_ground_truth_1.jpg`](./dataset_v1/labelled_images/sample_ground_truth_1.jpg) | **COMPLETED** |
+| **M1.5 Correct split** | **2** | Explain and show the 70/20/10 split with no leakage | [`correct_split/`](./correct_split)<br>[`SPLIT_REPORT.md`](./correct_split/SPLIT_REPORT.md) | **COMPLETED** |
+| **M1.6 Train & run detector** | **5** | Show mAP@0.5, precision, recall, confusion matrix vs target, explain 10 wrong detections | [`train_and_run_detector/`](./train_and_run_detector)<br>[`confusion_matrix.png`](./train_and_run_detector/confusion_matrix.png) | **COMPLETED** |
 | **M1 Total** | **20 / 20** | **All 6 Milestone 1 criteria verified on Raspberry Pi 5 hardware** | | **100%** |
 
 ---
 
-### Milestone 2: M2 Optimize (20 Marks)
+### Detailed Deliverables Matrix: M2 Optimize (20 Marks)
 
-| Rubric Item | Marks | PDF Rubric Requirement ("What this student must show") | Evidence File & Clickable Deliverable Link | Status |
+| Rubric Item | Marks | PDF Rubric Requirement ("What this student must show") | Dedicated Folder & Evidence | Status |
 |---|:---:|---|---|:---:|
-| **M2.1 Export to ONNX** | **3** | Run the ONNX export myself and show my commit | [`M2_Optimize/export_onnx.py`](file:///home/juice/yolo_inference/M2_Optimize/export_onnx.py)<br>[`M2_Optimize/models/best.onnx`](file:///home/juice/yolo_inference/M2_Optimize/models/best.onnx)<br>[`M2_Optimize/results/export_onnx.log`](file:///home/juice/yolo_inference/M2_Optimize/results/export_onnx.log) | **COMPLETED** |
-| **M2.2 Convert & run live** | **4** | Convert to optimized backend and run it live on the device | [`M2_Optimize/onnx_inference.py`](file:///home/juice/yolo_inference/M2_Optimize/onnx_inference.py)<br>[`M2_Optimize/BACKEND_INVESTIGATION.md`](file:///home/juice/yolo_inference/M2_Optimize/BACKEND_INVESTIGATION.md)<br>[`M2_Optimize/evidence/live_onnx_detection.jpg`](file:///home/juice/yolo_inference/M2_Optimize/evidence/live_onnx_detection.jpg)<br>[`M2_Optimize/evidence/live_onnx_perfect_detection.jpg`](file:///home/juice/yolo_inference/M2_Optimize/evidence/live_onnx_perfect_detection.jpg) | **COMPLETED** |
-| **M2.3 Accuracy check** | **4** | Show mAP before vs after on the same test set | [`M2_Optimize/ACCURACY_REPORT.md`](file:///home/juice/yolo_inference/M2_Optimize/ACCURACY_REPORT.md)<br>[`M2_Optimize/evidence/m2_accuracy_comparison.png`](file:///home/juice/yolo_inference/M2_Optimize/evidence/m2_accuracy_comparison.png) | **COMPLETED** |
-| **M2.4 Fair benchmark** | **4** | Run 20 warm-up and 100+ timed runs at batch 1. Show median and p95 latency, FPS and model size | [`M2_Optimize/fair_benchmark.py`](file:///home/juice/yolo_inference/M2_Optimize/fair_benchmark.py)<br>[`M2_Optimize/results/fair_benchmark_100runs.csv`](file:///home/juice/yolo_inference/M2_Optimize/results/fair_benchmark_100runs.csv)<br>[`M2_Optimize/results/benchmark_summary.json`](file:///home/juice/yolo_inference/M2_Optimize/results/benchmark_summary.json)<br>[`M2_Optimize/evidence/m2_benchmark_comparison.png`](file:///home/juice/yolo_inference/M2_Optimize/evidence/m2_benchmark_comparison.png) | **COMPLETED** |
-| **M2.5 CPU vs accelerator + stack** | **2** | Show the CPU vs accelerator table and draw the software stack | [`M2_Optimize/CPU_VS_ACCELERATOR.md`](file:///home/juice/yolo_inference/M2_Optimize/CPU_VS_ACCELERATOR.md) | **COMPLETED** |
-| **M2.6 Own target & trade-off** | **3** | Show the accuracy and speed target I wrote before training, my result, and explain the trade-off in simple words | [`M2_Optimize/TARGET_AND_TRADEOFF.md`](file:///home/juice/yolo_inference/M2_Optimize/TARGET_AND_TRADEOFF.md) | **COMPLETED** |
+| **M2.1 Export to ONNX** | **3** | Run the ONNX export myself and show my commit | [`export_to_onnx/`](./export_to_onnx)<br>[`export_onnx.py`](./export_to_onnx/export_onnx.py) | **COMPLETED** |
+| **M2.2 Convert & run live** | **4** | Convert to optimized backend and run it live on the device | [`convert_and_run_live/`](./convert_and_run_live)<br>[`live_onnx_detection.jpg`](./convert_and_run_live/live_onnx_detection.jpg) | **COMPLETED** |
+| **M2.3 Accuracy check** | **4** | Show mAP before vs after on the same test set | [`accuracy_check/`](./accuracy_check)<br>[`m2_accuracy_comparison.png`](./accuracy_check/m2_accuracy_comparison.png) | **COMPLETED** |
+| **M2.4 Fair benchmark** | **4** | Run 20 warm-up and 100+ timed runs at batch 1. Show median and p95 latency, FPS and model size | [`fair_benchmark/`](./fair_benchmark)<br>[`m2_benchmark_comparison.png`](./fair_benchmark/m2_benchmark_comparison.png) | **COMPLETED** |
+| **M2.5 CPU vs accelerator + stack** | **2** | Show the CPU vs accelerator table and draw the software stack | [`cpu_vs_accelerator_stack/`](./cpu_vs_accelerator_stack)<br>[`CPU_VS_ACCELERATOR.md`](./cpu_vs_accelerator_stack/CPU_VS_ACCELERATOR.md) | **COMPLETED** |
+| **M2.6 Own target & trade-off** | **3** | Show the accuracy and speed target I wrote before training, my result, and explain the trade-off in simple words | [`own_target_and_trade_off/`](./own_target_and_trade_off)<br>[`TARGET_AND_TRADEOFF.md`](./own_target_and_trade_off/TARGET_AND_TRADEOFF.md) | **COMPLETED** |
 | **M2 Total** | **20 / 20** | **All 6 Milestone 2 criteria verified on Raspberry Pi 5 hardware** | | **100%** |
 
 ---
@@ -201,7 +260,7 @@ All speed, latency, temperature, and resource utilization measurements represent
 - **Target Resolution**: $640 \times 640$ pixels, RGB 3-channel.
 
 ### Authentic Dataset Evidence Images
-The authentic Roboflow training images uploaded by Sai Sanjay R are stored directly in [`M1_Detect/evidence/labelled_images/`](file:///home/juice/yolo_inference/M1_Detect/evidence/labelled_images/):
+The authentic Roboflow training images uploaded by Sai Sanjay R are stored directly in [`M1_Detect/evidence/labelled_images/`](./dataset_v1/labelled_images/):
 1. `sample_ground_truth_1.jpg`: Plain white enclosure reverse face against high-contrast red industrial fixture.
 2. `sample_ground_truth_2.jpg`: White enclosure front face with central pinhole and longitudinal grooves at $45^\circ$ diagonal orientation on red surface.
 3. `sample_ground_truth_3.jpg`: White enclosure horizontally oriented on dark textured industrial conveyor surface.
@@ -229,20 +288,20 @@ Extracted directly from the training checkpoint history (`models/best.pt`):
   - True Negatives (TN): 98
 
 ### 10 Real Camera Failure Mode Tests
-All 10 failure mode images were captured directly from the physical **Logitech C270 webcam on the Raspberry Pi 5**, evaluated with `models/best.pt`, and saved with full diagnostic telemetry to [`M1_Detect/evidence/wrong_detections/`](file:///home/juice/yolo_inference/M1_Detect/evidence/wrong_detections/):
+All 10 failure mode images were captured directly from the physical **Logitech C270 webcam on the Raspberry Pi 5**, evaluated with `models/best.pt`, and saved with full diagnostic telemetry to [`M1_Detect/evidence/wrong_detections/`](./train_and_run_detector/wrong_detections/):
 
 | Case # | Evidence File Link | Observed Mode | Root Cause Analysis | Engineering Mitigation |
 |:---:|---|:---:|---|---|
-| **01** | [`error_01_specular_glare_saturation.jpg`](file:///home/juice/yolo_inference/M1_Detect/evidence/wrong_detections/error_01_specular_glare_saturation.jpg) | Low Conf ($10.3\%$) | Directional lighting saturates white plastic surface, destroying contour gradients around the central pinhole and longitudinal grooves. | Install circular polarizing filter (CPL) on lens; replace direct spotlighting with diffused dome or ring LED illumination. |
-| **02** | [`error_02_severe_mechanical_occlusion.jpg`](file:///home/juice/yolo_inference/M1_Detect/evidence/wrong_detections/error_02_severe_mechanical_occlusion.jpg) | False Negative ($0\text{ box}$) | Conveyor retention clamp covers $>65\%$ of the casing body; YOLO backbone fails to extract the primary aspect ratio anchor. | Position camera upstream of mechanical transfer station; augment dataset with CutMix / Random Erasing. |
-| **03** | [`error_03_extreme_distance_subsampling.jpg`](file:///home/juice/yolo_inference/M1_Detect/evidence/wrong_detections/error_03_extreme_distance_subsampling.jpg) | False Negative ($0\text{ box}$) | Part positioned $>1.5\text{ m}$ away; enclosure spans $<28\times28\text{ px}$, falling below the P3 feature stride receptive field. | Enforce rigid camera working distance ($25\text{--}35\text{ cm}$) or upgrade to $12\text{ mm}$ narrow-angle telephoto lens. |
-| **04** | [`error_04_background_texture_distractor.jpg`](file:///home/juice/yolo_inference/M1_Detect/evidence/wrong_detections/error_04_background_texture_distractor.jpg) | False Negative ($0\text{ box}$) | Complex high-frequency background clutter (cables, machinery) disrupts spatial attention heads. | Install neutral, low-reflectance matte background shroud (black/grey) along conveyor bed. |
-| **05** | [`error_05_shallow_viewpoint_yaw.jpg`](file:///home/juice/yolo_inference/M1_Detect/evidence/wrong_detections/error_05_shallow_viewpoint_yaw.jpg) | False Negative ($0\text{ box}$) | Enclosure viewed at steep $>75^\circ$ oblique yaw/pitch angle, concealing planar surface groove geometry. | Mount camera on rigid bracket perpendicular to the inspection surface ($85^\circ\text{--}90^\circ$ orthogonal top-down). |
-| **06** | [`error_06_low_illumination_underexposure.jpg`](file:///home/juice/yolo_inference/M1_Detect/evidence/wrong_detections/error_06_low_illumination_underexposure.jpg) | False Negative ($0\text{ box}$) | Ambient lighting drops below 30 lux; sensor noise buries the subtle white casing edges against shadow. | Deploy dedicated constant-current 24V LED industrial bar light; configure auto-exposure floor in V4L2. |
-| **07** | [`error_07_frame_boundary_clipping.jpg`](file:///home/juice/yolo_inference/M1_Detect/evidence/wrong_detections/error_07_frame_boundary_clipping.jpg) | False Negative ($0\text{ box}$) | Enclosure is partially clipped at the image perimeter (40% boundary cutoff); incomplete bounding anchors fail confidence threshold. | Trigger frame capture using upstream photoelectric through-beam sensor to ensure centering before inference. |
-| **08** | [`error_08_conveyor_motion_blur.jpg`](file:///home/juice/yolo_inference/M1_Detect/evidence/wrong_detections/error_08_conveyor_motion_blur.jpg) | False Negative ($0\text{ box}$) | High conveyor transport speed causes horizontal motion smear ($k=35$), obliterating sharp corner features. | Lock webcam exposure via `v4l2-ctl -c exposure_time_absolute=50` ($< 2\text{ ms}$ shutter) to freeze motion. |
-| **09** | [`error_09_near_field_defocus_blur.jpg`](file:///home/juice/yolo_inference/M1_Detect/evidence/wrong_detections/error_09_near_field_defocus_blur.jpg) | False Negative ($0\text{ box}$) | Enclosure held $<12\text{ cm}$ from lens, violating the Logitech C270 fixed-focus hyperfocal distance. | Maintain physical clearance within calibrated depth of field ($20\text{--}40\text{ cm}$). |
-| **10** | [`error_10_empty_background_false_negative.jpg`](file:///home/juice/yolo_inference/M1_Detect/evidence/wrong_detections/error_10_empty_background_false_negative.jpg) | True Negative ($0\text{ box}$) | Part missed conveyor indexing slot; camera captures live empty background. Model correctly outputs 0 detections with zero false positive hallucinations. | Implement downstream reject gate diverter for missing part condition. |
+| **01** | [`error_01_specular_glare_saturation.jpg`](./train_and_run_detector/wrong_detections/error_01_specular_glare_saturation.jpg) | Low Conf ($10.3\%$) | Directional lighting saturates white plastic surface, destroying contour gradients around the central pinhole and longitudinal grooves. | Install circular polarizing filter (CPL) on lens; replace direct spotlighting with diffused dome or ring LED illumination. |
+| **02** | [`error_02_severe_mechanical_occlusion.jpg`](./train_and_run_detector/wrong_detections/error_02_severe_mechanical_occlusion.jpg) | False Negative ($0\text{ box}$) | Conveyor retention clamp covers $>65\%$ of the casing body; YOLO backbone fails to extract the primary aspect ratio anchor. | Position camera upstream of mechanical transfer station; augment dataset with CutMix / Random Erasing. |
+| **03** | [`error_03_extreme_distance_subsampling.jpg`](./train_and_run_detector/wrong_detections/error_03_extreme_distance_subsampling.jpg) | False Negative ($0\text{ box}$) | Part positioned $>1.5\text{ m}$ away; enclosure spans $<28\times28\text{ px}$, falling below the P3 feature stride receptive field. | Enforce rigid camera working distance ($25\text{--}35\text{ cm}$) or upgrade to $12\text{ mm}$ narrow-angle telephoto lens. |
+| **04** | [`error_04_background_texture_distractor.jpg`](./train_and_run_detector/wrong_detections/error_04_background_texture_distractor.jpg) | False Negative ($0\text{ box}$) | Complex high-frequency background clutter (cables, machinery) disrupts spatial attention heads. | Install neutral, low-reflectance matte background shroud (black/grey) along conveyor bed. |
+| **05** | [`error_05_shallow_viewpoint_yaw.jpg`](./train_and_run_detector/wrong_detections/error_05_shallow_viewpoint_yaw.jpg) | False Negative ($0\text{ box}$) | Enclosure viewed at steep $>75^\circ$ oblique yaw/pitch angle, concealing planar surface groove geometry. | Mount camera on rigid bracket perpendicular to the inspection surface ($85^\circ\text{--}90^\circ$ orthogonal top-down). |
+| **06** | [`error_06_low_illumination_underexposure.jpg`](./train_and_run_detector/wrong_detections/error_06_low_illumination_underexposure.jpg) | False Negative ($0\text{ box}$) | Ambient lighting drops below 30 lux; sensor noise buries the subtle white casing edges against shadow. | Deploy dedicated constant-current 24V LED industrial bar light; configure auto-exposure floor in V4L2. |
+| **07** | [`error_07_frame_boundary_clipping.jpg`](./train_and_run_detector/wrong_detections/error_07_frame_boundary_clipping.jpg) | False Negative ($0\text{ box}$) | Enclosure is partially clipped at the image perimeter (40% boundary cutoff); incomplete bounding anchors fail confidence threshold. | Trigger frame capture using upstream photoelectric through-beam sensor to ensure centering before inference. |
+| **08** | [`error_08_conveyor_motion_blur.jpg`](./train_and_run_detector/wrong_detections/error_08_conveyor_motion_blur.jpg) | False Negative ($0\text{ box}$) | High conveyor transport speed causes horizontal motion smear ($k=35$), obliterating sharp corner features. | Lock webcam exposure via `v4l2-ctl -c exposure_time_absolute=50` ($< 2\text{ ms}$ shutter) to freeze motion. |
+| **09** | [`error_09_near_field_defocus_blur.jpg`](./train_and_run_detector/wrong_detections/error_09_near_field_defocus_blur.jpg) | False Negative ($0\text{ box}$) | Enclosure held $<12\text{ cm}$ from lens, violating the Logitech C270 fixed-focus hyperfocal distance. | Maintain physical clearance within calibrated depth of field ($20\text{--}40\text{ cm}$). |
+| **10** | [`error_10_empty_background_false_negative.jpg`](./train_and_run_detector/wrong_detections/error_10_empty_background_false_negative.jpg) | True Negative ($0\text{ box}$) | Part missed conveyor indexing slot; camera captures live empty background. Model correctly outputs 0 detections with zero false positive hallucinations. | Implement downstream reject gate diverter for missing part condition. |
 
 ---
 

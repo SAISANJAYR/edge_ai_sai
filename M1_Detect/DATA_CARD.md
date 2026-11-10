@@ -26,9 +26,9 @@
   - Sample 2: White enclosure front face with sensor pinhole aperture and longitudinal grooves at $45^\circ$ diagonal orientation on red surface.
   - Sample 3: White enclosure horizontal orientation on dark textured industrial conveyor surface.
 - **Visual Evidence References**:
-  - [Sample Ground Truth 1](file:///home/juice/yolo_inference/M1_Detect/evidence/labelled_images/sample_ground_truth_1.jpg)
-  - [Sample Ground Truth 2](file:///home/juice/yolo_inference/M1_Detect/evidence/labelled_images/sample_ground_truth_2.jpg)
-  - [Sample Ground Truth 3](file:///home/juice/yolo_inference/M1_Detect/evidence/labelled_images/sample_ground_truth_3.jpg)
+  - [Sample Ground Truth 1](../M1_Detect/evidence/labelled_images/sample_ground_truth_1.jpg)
+  - [Sample Ground Truth 2](../M1_Detect/evidence/labelled_images/sample_ground_truth_2.jpg)
+  - [Sample Ground Truth 3](../M1_Detect/evidence/labelled_images/sample_ground_truth_3.jpg)
 
 ---
 

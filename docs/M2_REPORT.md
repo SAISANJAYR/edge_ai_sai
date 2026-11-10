@@ -28,7 +28,7 @@ xychart-beta
 ## 2. M2.1 ONNX Export and Graph Validation (3 Marks)
 
 ### 2.1 Export Configuration
-Executed via [`src/optimization/export_onnx.py`](file:///home/juice/yolo_inference/src/optimization/export_onnx.py):
+Executed via [`src/optimization/export_onnx.py`](../src/optimization/export_onnx.py):
 - **Base Model**: `models/best.pt` (6.17 MB PyTorch checkpoint)
 - **Exported Format**: ONNX (`models/optimized/best.onnx`, 12.16 MB)
 - **Input Dimensions**: $1 \times 3 \times 640 \times 640$ (BCHW float32)
@@ -64,7 +64,7 @@ We rigorously investigated four candidate backends for Debian 13 (Trixie) ARM64 
 ## 4. M2.3 & M2.4 Fair Comparative Benchmark (8 Marks)
 
 ### 4.1 Benchmark Protocol
-Conducted via [`src/optimization/benchmark_comparison.py`](file:///home/juice/yolo_inference/src/optimization/benchmark_comparison.py):
+Conducted via [`src/optimization/benchmark_comparison.py`](../src/optimization/benchmark_comparison.py):
 - **Hardware**: Raspberry Pi 5 (Quad-Core Cortex-A76 @ 2.4 GHz, 4GB RAM)
 - **Operating System**: Debian 13 Trixie aarch64
 - **Test Image**: Identical reference frame (`data/test/initial_capture.jpg`)
@@ -89,11 +89,11 @@ Conducted via [`src/optimization/benchmark_comparison.py`](file:///home/juice/yo
 | **Average RAM Footprint** | 2,986.7 MB | 3,035.9 MB | Negligible delta (+49.2 MB) |
 
 ### 4.3 Evidence Artifacts
-- Raw Benchmark CSV: [`results/m2/fair_benchmark.csv`](file:///home/juice/yolo_inference/results/m2/fair_benchmark.csv)
-- Machine-Readable Summary: [`results/m2/benchmark_summary.json`](file:///home/juice/yolo_inference/results/m2/benchmark_summary.json)
-- Comparative Performance Graph: [`evidence/graphs/m2_benchmark_comparison.png`](file:///home/juice/yolo_inference/evidence/graphs/m2_benchmark_comparison.png)
-- Accuracy Parity Graph: [`evidence/graphs/m2_accuracy_comparison.png`](file:///home/juice/yolo_inference/evidence/graphs/m2_accuracy_comparison.png)
-- Annotated ONNX Inference Screenshot: [`evidence/screenshots/m2/m2_onnx_inference.jpg`](file:///home/juice/yolo_inference/evidence/screenshots/m2/m2_onnx_inference.jpg)
+- Raw Benchmark CSV: [`results/m2/fair_benchmark.csv`](../results/m2/fair_benchmark.csv)
+- Machine-Readable Summary: [`results/m2/benchmark_summary.json`](../results/m2/benchmark_summary.json)
+- Comparative Performance Graph: [`evidence/graphs/m2_benchmark_comparison.png`](../evidence/graphs/m2_benchmark_comparison.png)
+- Accuracy Parity Graph: [`evidence/graphs/m2_accuracy_comparison.png`](../evidence/graphs/m2_accuracy_comparison.png)
+- Annotated ONNX Inference Screenshot: [`evidence/screenshots/m2/m2_onnx_inference.jpg`](../evidence/screenshots/m2/m2_onnx_inference.jpg)
 
 ---
 
@@ -160,8 +160,8 @@ flowchart TD
 ---
 
 ## 7. Milestone 2 Deliverables Summary
-1. Exported ONNX Model: [`models/optimized/best.onnx`](file:///home/juice/yolo_inference/models/optimized/best.onnx)
-2. Unified Inference Engine: [`src/detection/inference.py`](file:///home/juice/yolo_inference/src/detection/inference.py)
-3. Benchmark Comparison Tool: [`src/optimization/benchmark_comparison.py`](file:///home/juice/yolo_inference/src/optimization/benchmark_comparison.py)
-4. Empirical CSV & Summary: [`results/m2/fair_benchmark.csv`](file:///home/juice/yolo_inference/results/m2/fair_benchmark.csv), [`results/m2/benchmark_summary.json`](file:///home/juice/yolo_inference/results/m2/benchmark_summary.json)
-5. Evidence Graphs: [`evidence/graphs/m2_benchmark_comparison.png`](file:///home/juice/yolo_inference/evidence/graphs/m2_benchmark_comparison.png), [`evidence/graphs/m2_accuracy_comparison.png`](file:///home/juice/yolo_inference/evidence/graphs/m2_accuracy_comparison.png)
+1. Exported ONNX Model: [`models/optimized/best.onnx`](../models/optimized/best.onnx)
+2. Unified Inference Engine: [`src/detection/inference.py`](../src/detection/inference.py)
+3. Benchmark Comparison Tool: [`src/optimization/benchmark_comparison.py`](../src/optimization/benchmark_comparison.py)
+4. Empirical CSV & Summary: [`results/m2/fair_benchmark.csv`](../results/m2/fair_benchmark.csv), [`results/m2/benchmark_summary.json`](../results/m2/benchmark_summary.json)
+5. Evidence Graphs: [`evidence/graphs/m2_benchmark_comparison.png`](../evidence/graphs/m2_benchmark_comparison.png), [`evidence/graphs/m2_accuracy_comparison.png`](../evidence/graphs/m2_accuracy_comparison.png)
