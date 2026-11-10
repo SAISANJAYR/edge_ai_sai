@@ -30,8 +30,8 @@ def main():
     print("Detecting camera device...", flush=True)
     cap = None
     cam_idx = -1
-    for idx in [0, 1, 2, 3]:
-        c = cv2.VideoCapture(idx)
+    for idx in [1, 0, 2, 3]:
+        c = cv2.VideoCapture(idx, cv2.CAP_V4L2)
         if c.isOpened():
             ret, _ = c.read()
             if ret:
