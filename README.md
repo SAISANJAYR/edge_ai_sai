@@ -33,27 +33,12 @@ As required by the assessment rubric, all deliverables, code, measurements, and 
 
 ---
 
-## 2. Project Overview
-This project implements a complete, industrial-grade Edge AI vision inspection station deployed on a Raspberry Pi 5 (4GB RAM, ARM Cortex-A76). The system combines real-time deep learning object detection (YOLOv8), multi-threaded image acquisition, deterministic debounce decision logic, GPIO-driven rejection actuation, 6-DoF IMU vibration anomaly detection (MPU6050), TLS-authenticated industrial MQTT telemetry, PLC Modbus TCP registers, and a live web telemetry dashboard.
+## 2. Project Scope & Assessment Context
+This repository contains the complete individual engineering deliverables for **Milestones M1 (Detect) and M2 (Optimize)** of the Edge AI & Embedded Vision Systems assessment (40 Marks total).
+- **M1: Detect (20 Marks)**: Hardware identification, V4L2 camera acquisition, OpenCV pipeline, baseline benchmarking on Raspberry Pi 5 Cortex-A76, dataset documentation, split verification, model evaluation, and failure mode analysis.
+- **M2: Optimize (20 Marks)**: Model graph export to ONNX, ARM NEON SIMD runtime optimization via ONNX Runtime CPU, numerical parity verification, fair comparative benchmarking (100 timed runs at batch 1), hardware accelerator trade-off analysis, and target achievement reporting.
 
-## 3. Problem Statement
-High-speed automated manufacturing lines require local, low-latency visual quality verification and concurrent equipment health monitoring without reliance on high-bandwidth, high-latency cloud connections. Traditional industrial smart cameras are proprietary and costly, while desktop GPU solutions consume excessive power. Deploying YOLOv8 on an embedded ARM64 SoC like the Raspberry Pi 5 requires rigorous performance profiling, runtime optimization (ONNX), hardware safety interlocks, and multi-sensor integration within tight memory and thermal boundaries.
-
-## 4. Project Objectives
-- **M1 (Detect)**: Deploy USB webcam acquisition and YOLOv8 inference pipeline with live FPS overlay, benchmarking baseline CPU latency, temperature, and memory footprint.
-- **M2 (Optimize)**: Export YOLOv8 to ONNX and ONNX Runtime CPU engine, evaluating latency speedups, P95 metrics, and accuracy trade-offs.
-- **M3 (Decide & Act)**: Implement a configurable debounce decision engine, dual-camera ingestion, and fail-safe GPIO actuator control.
-- **M4 (Monitor & Connect)**: Integrate MPU6050 vibration telemetry, train an unsupervised Isolation Forest anomaly detector, and establish secure TLS MQTT and Modbus PLC interfaces.
-- **M5 (Complete System & Dashboard)**: Build a synchronized multi-process inspection station with a real-time web dashboard, systemd auto-restart, and comprehensive engineering documentation.
-
-## 5. System Capabilities
-- Real-time bounding box detection and class confidence evaluation at 640x480 resolution.
-- Dynamic fallback to synthetic frame generation if physical camera hardware is disconnected.
-- N-frame temporal debouncing to prevent transient false rejections.
-- Deterministic actuator trigger pulse with safe default state enforcement on startup and shutdown.
-- 50 Hz IMU vibration logging with statistical and machine learning anomaly scoring.
-- Dual industrial connectivity: Modbus TCP register map for PLCs + TLS 1.3 MQTT for MES/SCADA.
-- Web-based live monitoring dashboard with real-time video streaming and KPI tracking.
+*(Note: Milestones M3, M4, and M5 represent separate collaborative team-project phases handled in a distinct assessment module).*
 
 ---
 
